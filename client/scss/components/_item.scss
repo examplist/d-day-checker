@@ -1,0 +1,115 @@
+.item {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+
+  & button {
+    cursor: pointer;
+  }
+}
+
+.item .first-line {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+
+  & .d-day {
+    width: 15%;
+  }
+  & .date {
+    width: 25%;
+  }
+  & .input-date {
+    width: 20%;
+  }
+  & .content {
+    width: 50%;
+  }
+  & .input-content {
+    width: 60%;
+  }
+  & .edit {
+    width: 5%;
+  }
+  & .delete {
+    width: 5%;
+  }
+  & .confirm {
+    width: 10%;
+  }
+  & .cancel {
+    width: 10%;
+  }
+}
+
+.item .second-line {
+  display: none;
+  height: 1.5rem;
+}
+
+// 반응형: 좁아질 때
+@media (max-width: 768px) {
+  .item .first-line {
+    margin-bottom: 0.5rem;
+
+    & .content {
+      display: none;
+    }
+    & .input-content {
+      display: none;
+    }
+
+    & .d-day {
+      width: 30%;
+    }
+    & .date {
+      width: 50%;
+    }
+    & .input-date {
+      width: 80%;
+    }
+    & .edit {
+      width: 10%;
+    }
+    & .delete {
+      width: 10%;
+    }
+    & .confirm {
+      width: 10%;
+    }
+    & .cancel {
+      width: 10%;
+    }
+  }
+  .item .second-line {
+    display: block;
+
+    & .input-content {
+      width: 100%;
+    }
+  }
+}
+
+// edit <-> read 모드 전환
+.hide {
+  display: none;
+}
+
+// 각종 버튼
+.edit {
+  background-color: #ffff00;
+  color: black;
+}
+.delete {
+  background-color: #ff1e1e;
+  color: white;
+}
+.confirm {
+  background-color: #31c6d4;
+  color: black;
+}
+.cancel {
+  background-color: #aaa;
+  color: black;
+}

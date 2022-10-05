@@ -1,0 +1,14 @@
+// sass --watch scss:css
+
+// 기본 설정
+@use 'base';
+
+// components
+@use './components/body';
+@use './components/app';
+@use './components/title';
+@use './components/add';
+@use './components/sort';
+@use './components/container';
+@use './components/item';
+@use './components/pagination';

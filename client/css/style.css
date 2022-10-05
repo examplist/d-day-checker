@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input[type=submit] {
+  border: none;
+  margin: 0px 1px;
+  cursor: pointer;
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(222, 188, 77, 0.304);
+}
+
+#app {
+  flex-shrink: 0;
+  width: 80%;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.add {
+  display: flex;
+  margin-bottom: 0.7rem;
+  height: 2rem;
+}
+.add .date {
+  flex-grow: 4;
+}
+.add .text {
+  flex-grow: 15;
+}
+.add .submit {
+  flex-grow: 3;
+  background-color: #00ffd1;
+  color: black;
+}
+
+.sort {
+  height: 1.5rem;
+  display: flex;
+  justify-content: end;
+  background-color: rgba(222, 188, 77, 0.304);
+}
+
+.sort button {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  margin-right: 0.25rem;
+  background-color: transparent;
+}
+.sort button.selected {
+  color: #ff1e1e;
+}
+
+.container {
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container.loading {
+  animation: skeleton 1s linear infinite alternate;
+}
+.container.no-content, .container.error {
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 22rem;
+  }
+  .container.loading {
+    animation: skeleton 1s linear infinite alternate;
+  }
+}
+.item {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.item button {
+  cursor: pointer;
+}
+
+.item .first-line {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+}
+.item .first-line .d-day {
+  width: 15%;
+}
+.item .first-line .date {
+  width: 25%;
+}
+.item .first-line .input-date {
+  width: 20%;
+}
+.item .first-line .content {
+  width: 50%;
+}
+.item .first-line .input-content {
+  width: 60%;
+}
+.item .first-line .edit {
+  width: 5%;
+}
+.item .first-line .delete {
+  width: 5%;
+}
+.item .first-line .confirm {
+  width: 10%;
+}
+.item .first-line .cancel {
+  width: 10%;
+}
+
+.item .second-line {
+  display: none;
+  height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .item .first-line {
+    margin-bottom: 0.5rem;
+  }
+  .item .first-line .content {
+    display: none;
+  }
+  .item .first-line .input-content {
+    display: none;
+  }
+  .item .first-line .d-day {
+    width: 30%;
+  }
+  .item .first-line .date {
+    width: 50%;
+  }
+  .item .first-line .input-date {
+    width: 80%;
+  }
+  .item .first-line .edit {
+    width: 10%;
+  }
+  .item .first-line .delete {
+    width: 10%;
+  }
+  .item .first-line .confirm {
+    width: 10%;
+  }
+  .item .first-line .cancel {
+    width: 10%;
+  }
+  .item .second-line {
+    display: block;
+  }
+  .item .second-line .input-content {
+    width: 100%;
+  }
+}
+.hide {
+  display: none;
+}
+
+.edit {
+  background-color: #ffff00;
+  color: black;
+}
+
+.delete {
+  background-color: #ff1e1e;
+  color: white;
+}
+
+.confirm {
+  background-color: #31c6d4;
+  color: black;
+}
+
+.cancel {
+  background-color: #aaa;
+  color: black;
+}
+
+.pagination {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  width: 3rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+}
+.pagination button.selected {
+  color: rgb(171, 145, 59);
+}
+
+/*# sourceMappingURL=style.css.map */

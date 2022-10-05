@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input[type='submit'] {
+  border: none;
+  margin: 0px 1px;
+  cursor: pointer;
+}
+
+// skeleton
+@keyframes skeleton {
+  0% {
+    background-color: #ddd;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
+$skeleton: skeleton 1s linear infinite alternate;

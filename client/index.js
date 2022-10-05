@@ -1,0 +1,13 @@
+import $title from './components/Title.js';
+import Add from './components/Add.js';
+import $sort from './components/Sort.js';
+import $container from './components/Container.js';
+import $pagination from './components/Pagination.js';
+const $app = document.querySelector('#app');
+const addInstance = new Add();
+const $add = addInstance.$add;
+$app === null || $app === void 0 ? void 0 : $app.append($title);
+$app === null || $app === void 0 ? void 0 : $app.append($add);
+$app === null || $app === void 0 ? void 0 : $app.append($sort);
+$app === null || $app === void 0 ? void 0 : $app.append($container);
+$app === null || $app === void 0 ? void 0 : $app.append($pagination);

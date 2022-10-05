@@ -1,0 +1,15 @@
+.pagination {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  width: 3rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+
+  &.selected {
+    color: rgb(171, 145, 59);
+  }
+}

@@ -1,0 +1,27 @@
+@use '../base';
+
+.container {
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &.loading {
+    animation: base.$skeleton;
+  }
+
+  &.no-content,
+  &.error {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 22rem;
+
+    &.loading {
+      animation: base.$skeleton;
+    }
+  }
+}
