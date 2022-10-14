@@ -31,7 +31,7 @@ body {
   flex-shrink: 0;
   width: 80%;
   padding: 1rem;
-  background-color: white;
+  background-color: #fff;
   border-radius: 1rem;
 }
 
@@ -55,7 +55,7 @@ body {
 .add .submit {
   flex-grow: 3;
   background-color: #00ffd1;
-  color: black;
+  color: #000;
 }
 
 .sort {
@@ -190,22 +190,22 @@ body {
 
 .edit {
   background-color: #ffff00;
-  color: black;
+  color: #000;
 }
 
 .delete {
   background-color: #ff1e1e;
-  color: white;
+  color: #fff;
 }
 
 .confirm {
   background-color: #31c6d4;
-  color: black;
+  color: #000;
 }
 
 .cancel {
-  background-color: #aaa;
-  color: black;
+  background-color: #999;
+  color: #fff;
 }
 
 .pagination {

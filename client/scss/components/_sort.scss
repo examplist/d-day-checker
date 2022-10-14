@@ -1,8 +1,10 @@
+@use '../theme';
+
 .sort {
   height: 1.5rem;
   display: flex;
   justify-content: end;
-  background-color: rgba(222, 188, 77, 0.304);
+  background-color: theme.$color-faint-brown;
 }
 
 .sort {
@@ -15,7 +17,7 @@
     background-color: transparent;
 
     &.selected {
-      color: #ff1e1e;
+      color: theme.$color-red;
     }
   }
 }

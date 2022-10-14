@@ -1,3 +1,5 @@
+@use '../theme';
+
 .add {
   display: flex;
   margin-bottom: 0.7rem;
@@ -13,7 +15,7 @@
 
   & .submit {
     flex-grow: 3;
-    background-color: #00ffd1;
-    color: black;
+    background-color: theme.$color-light-green;
+    color: theme.$color-black;
   }
 }

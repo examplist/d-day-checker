@@ -1,5 +1,7 @@
+@use '../theme';
+
 .item {
-  border: 1px solid #ccc;
+  border: 1px solid theme.$color-grey-c;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   width: 100%;
@@ -98,18 +100,18 @@
 
 // 각종 버튼
 .edit {
-  background-color: #ffff00;
-  color: black;
+  background-color: theme.$color-yellow;
+  color: theme.$color-black;
 }
 .delete {
-  background-color: #ff1e1e;
-  color: white;
+  background-color: theme.$color-red;
+  color: theme.$color-white;
 }
 .confirm {
-  background-color: #31c6d4;
-  color: black;
+  background-color: theme.$color-dark-green;
+  color: theme.$color-black;
 }
 .cancel {
-  background-color: #aaa;
-  color: black;
+  background-color: theme.$color-grey-9;
+  color: theme.$color-white;
 }

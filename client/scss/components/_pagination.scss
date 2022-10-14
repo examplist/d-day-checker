@@ -1,3 +1,5 @@
+@use '../theme';
+
 .pagination {
   height: 2rem;
   display: flex;
@@ -6,10 +8,10 @@
 
 .pagination button {
   width: 3rem;
-  background-color: #eee;
+  background-color: theme.$color-grey-e;
   border-radius: 0.5rem;
 
   &.selected {
-    color: rgb(171, 145, 59);
+    color: theme.$color-yellow-brown;
   }
 }
