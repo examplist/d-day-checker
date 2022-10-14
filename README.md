@@ -45,3 +45,9 @@ Node.js, Express, Sequelize로 MySQL과 연동
 ## 시연 및 코드 설명 영상
 
 https://youtu.be/MNA45jwk7sE
+
+## 회고
+
+다음 글을 참고하시기 바랍니다.
+
+https://github.com/bada3670/d-day-checker/wiki/%ED%9A%8C%EA%B3%A0
