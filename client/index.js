@@ -11,3 +11,5 @@ $app === null || $app === void 0 ? void 0 : $app.append($add);
 $app === null || $app === void 0 ? void 0 : $app.append($sort);
 $app === null || $app === void 0 ? void 0 : $app.append($container);
 $app === null || $app === void 0 ? void 0 : $app.append($pagination);
+export default $app;
+export { $add };

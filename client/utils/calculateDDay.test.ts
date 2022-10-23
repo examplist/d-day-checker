@@ -1,5 +1,5 @@
 import calculateDDay from './calculateDDay';
-import { expect, it } from '../node_modules/vitest/dist/index.js';
+import { expect, it } from 'vitest';
 
 function dateObjectToString(date: Date): string {
   const year = '' + date.getFullYear();

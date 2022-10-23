@@ -47,7 +47,7 @@ export default class Item {
                 alert('삭제를 하지 못했습니다.');
             }
         });
-        this.cofirmEdit = () => __awaiter(this, void 0, void 0, function* () {
+        this.confirmEdit = () => __awaiter(this, void 0, void 0, function* () {
             const dataToBeSent = {
                 date: this.$inputDate.value,
                 content: this.$inputContent1.value,
@@ -113,7 +113,7 @@ export default class Item {
         // 이벤트 핸들러 추가하기
         this.$edit.addEventListener('click', this.editItem);
         this.$delete.addEventListener('click', this.deleteItem);
-        this.$confirm.addEventListener('click', this.cofirmEdit);
+        this.$confirm.addEventListener('click', this.confirmEdit);
         this.$cancel.addEventListener('click', this.cancelEdit);
         this.$inputContent1.addEventListener('input', (e) => {
             if (e.currentTarget) {

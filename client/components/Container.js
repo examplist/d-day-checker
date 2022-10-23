@@ -12,6 +12,8 @@ import { getData } from '../data.js';
 import { countItemsInPage, paginate } from './Pagination.js';
 import { sortMode } from './Sort.js';
 const $container = document.createElement('div');
+const emptyMessage = '자료가 없습니다.';
+const errorMessage = '죄송합니다. 현재 자료를 불러올 수 없습니다.';
 function makeItems(page, sort) {
     return __awaiter(this, void 0, void 0, function* () {
         $container.innerHTML = '';
@@ -23,7 +25,7 @@ function makeItems(page, sort) {
             $container.classList.remove('loading');
             if (resultArray.length === 0) {
                 $container.classList.add('no-content');
-                $container.innerText = '자료가 없습니다.';
+                $container.innerText = emptyMessage;
             }
             else {
                 resultArray.forEach((result) => {
@@ -38,10 +40,10 @@ function makeItems(page, sort) {
             console.error(err);
             $container.classList.remove('loading');
             $container.classList.add('error');
-            $container.innerText = '죄송합니다. 현재 자료를 불러올 수 없습니다.';
+            $container.innerText = errorMessage;
         }
     });
 }
 makeItems(1, sortMode);
 export default $container;
-export { makeItems };
+export { makeItems, emptyMessage, errorMessage };

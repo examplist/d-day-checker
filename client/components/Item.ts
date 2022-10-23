@@ -74,7 +74,7 @@ export default class Item {
     // 이벤트 핸들러 추가하기
     this.$edit.addEventListener('click', this.editItem);
     this.$delete.addEventListener('click', this.deleteItem);
-    this.$confirm.addEventListener('click', this.cofirmEdit);
+    this.$confirm.addEventListener('click', this.confirmEdit);
     this.$cancel.addEventListener('click', this.cancelEdit);
     this.$inputContent1.addEventListener('input', (e) => {
       if (e.currentTarget) {
@@ -141,7 +141,7 @@ export default class Item {
     }
   };
 
-  cofirmEdit = async () => {
+  confirmEdit = async () => {
     const dataToBeSent = {
       date: this.$inputDate.value,
       content: this.$inputContent1.value,

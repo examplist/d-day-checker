@@ -14,3 +14,6 @@ $app?.append($add);
 $app?.append($sort);
 $app?.append($container);
 $app?.append($pagination);
+
+export default $app;
+export { $add };

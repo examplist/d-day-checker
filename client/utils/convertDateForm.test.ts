@@ -1,5 +1,5 @@
 import { toDisplay, toStandard } from './convertDateForm';
-import { expect, it, describe } from '../node_modules/vitest/dist/index.js';
+import { expect, it, describe } from 'vitest';
 
 describe('toDisplay, 2022-10-20을 2022년 10월 20일로', () => {
   it('"월"과 "일"이 두 자리 숫자인 경우', () => {
