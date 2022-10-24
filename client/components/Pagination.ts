@@ -1,6 +1,6 @@
-import * as data from '../data.js';
-import { makeItems } from './Container.js';
-import { sortMode } from './Sort.js';
+import * as data from '../data';
+import { makeItems } from './Container';
+import { sortMode } from './Sort';
 
 const $pagination = document.createElement('div');
 $pagination.classList.add('pagination');

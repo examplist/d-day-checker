@@ -1,7 +1,7 @@
-import Item from './Item.js';
-import { getData, Data } from '../data.js';
-import { countItemsInPage, paginate } from './Pagination.js';
-import { sortMode } from './Sort.js';
+import Item from './Item';
+import { getData, Data } from '../data';
+import { countItemsInPage, paginate } from './Pagination';
+import { sortMode } from './Sort';
 
 const $container = document.createElement('div');
 const emptyMessage = '자료가 없습니다.';

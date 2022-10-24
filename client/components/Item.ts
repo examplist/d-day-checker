@@ -1,8 +1,8 @@
-import calculateDDay from '../utils/calculateDDay.js';
-import * as convertDateForm from '../utils/convertDateForm.js';
-import { putData, deleteData } from '../data.js';
-import { makeItems } from './Container.js';
-import { sortMode } from './Sort.js';
+import calculateDDay from '../utils/calculateDDay';
+import * as convertDateForm from '../utils/convertDateForm';
+import { putData, deleteData } from '../data';
+import { makeItems } from './Container';
+import { sortMode } from './Sort';
 
 export default class Item {
   id: number;

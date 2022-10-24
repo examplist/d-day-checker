@@ -1,4 +1,4 @@
-import { makeItems } from './Container.js';
+import { makeItems } from './Container';
 
 const $sort = document.createElement('div');
 $sort.classList.add('sort');

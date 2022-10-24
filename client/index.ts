@@ -1,8 +1,8 @@
-import $title from './components/Title.js';
-import Add from './components/Add.js';
-import $sort from './components/Sort.js';
-import $container from './components/Container.js';
-import $pagination from './components/Pagination.js';
+import $title from './components/Title';
+import Add from './components/Add';
+import $sort from './components/Sort';
+import $container from './components/Container';
+import $pagination from './components/Pagination';
 
 const $app = document.querySelector('#app');
 

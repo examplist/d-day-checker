@@ -1,5 +1,3 @@
-import * as convertDateForm from './convertDateForm.js';
-
 export default function calculateDDay(dateString: string) {
   const dDate = new Date(dateString + 'T00:00:00');
   const nowDate = new Date();
