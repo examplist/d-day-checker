@@ -36,7 +36,7 @@ to-do list에 날짜 입력 기능과, 그에 따른 d-day를 알려주는 기�
 
 ### 클라이언트
 
-SCSS, 타입스크립트로 바닐라 자바스크립트
+SCSS, 타입스크립트로 바닐라 자바스크립트, Vitest
 
 ### 서버
 
@@ -44,7 +44,11 @@ Node.js, Express, Sequelize로 MySQL과 연동
 
 ## 시연 및 코드 설명 영상
 
-https://youtu.be/MNA45jwk7sE
+시연: https://youtu.be/9_Kv650pbA8
+
+프론트엔드 코드 설명: https://youtu.be/cVLAbrOUv_8
+
+백엔드 코드 설명: https://youtu.be/Mj1YjYaSyVo
 
 ## 회고
 
