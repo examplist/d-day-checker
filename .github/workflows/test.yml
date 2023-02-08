@@ -7,10 +7,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./client
     steps:
       - uses: actions/checkout@v3
-      - run: cd client
-      - run: ls -a
       - name: setup nodejs 14.x
         uses: actions/setup-node@v3
         with:
