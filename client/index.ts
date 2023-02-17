@@ -1,3 +1,5 @@
+import './scss/style.scss';
+
 import $title from './components/Title';
 import Add from './components/Add';
 import $sort from './components/Sort';
