@@ -34,7 +34,7 @@ to-do list에 날짜 입력 기능과, 그에 따른 d-day를 알려주는 기�
 
 ## 시연 영상
 
-[링크](https://youtu.be/9_Kv650pbA8)
+[링크](https://youtu.be/mM6YJQZSQzw)
 
 ## 사용된 기술
 
