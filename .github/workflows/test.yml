@@ -1,0 +1,23 @@
+name: test
+
+on:
+  push:
+    branches: ['dev']
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./client
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup nodejs 14.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14.x
+          cache: 'yarn'
+          cache-dependency-path: ${{ env.working-directory }}
+      - run: yarn install
+        working-directory: ${{ env.working-directory }}
+      - run: yarn test
+        working-directory: ${{ env.working-directory }}

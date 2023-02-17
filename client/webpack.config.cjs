@@ -1,4 +1,9 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+require('dotenv').config();
+const isProduction = process.env.IS_PRODUCTION;
 
 module.exports = {
   mode: 'production',
@@ -7,6 +12,13 @@ module.exports = {
     path: __dirname,
     filename: 'index.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './template.html',
+      favicon: './public/logo.svg',
+    }),
+    new MiniCssExtractPlugin(),
+  ],
   module: {
     rules: [
       {
@@ -19,9 +31,23 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.scss$/i,
+        use: [
+          isProduction === 'true' ? MiniCssExtractPlugin.loader : 'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+        exclude: /node_modules/,
+      },
     ],
   },
   resolve: {
-    extensions: ['.ts'],
+    extensions: ['.ts', '.js'],
+  },
+  devServer: {
+    open: true,
+    hot: true,
+    port: 3000,
   },
 };

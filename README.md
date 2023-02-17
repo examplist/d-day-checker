@@ -32,26 +32,24 @@ to-do list에 날짜 입력 기능과, 그에 따른 d-day를 알려주는 기�
 
 일정 부분에 있는 일정들이 화면이 좁아지면 1줄에서 2줄로 변합니다.
 
-## 사용된 기술
-
-### 클라이언트
-
-SCSS, 타입스크립트로 바닐라 자바스크립트, Vitest
-
-### 서버
-
-Node.js, Express, Sequelize로 MySQL과 연동
-
 ## 시연 및 코드 설명 영상
 
-시연: https://youtu.be/9_Kv650pbA8
+시연: [링크](https://youtu.be/9_Kv650pbA8)
 
-프론트엔드 코드 설명: https://youtu.be/cVLAbrOUv_8
+프론트엔드 코드 설명: [링크](https://youtu.be/cVLAbrOUv_8)
 
-백엔드 코드 설명: https://youtu.be/Mj1YjYaSyVo
+백엔드 코드 설명: [링크](https://youtu.be/Mj1YjYaSyVo)
 
-## 회고
+## 사용된 기술
+
+다음 글들을 참고하시기 바랍니다.
+
+client: [사용기술-client.md](사용기술-client.md)
+
+server: [사용기술-server.md](사용기술-server.md)
+
+## 고민했던 점
 
 다음 글을 참고하시기 바랍니다.
 
-https://github.com/bada3670/d-day-checker/wiki/%ED%9A%8C%EA%B3%A0
+[고민.md](고민.md)
