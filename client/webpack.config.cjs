@@ -9,13 +9,13 @@ module.exports = {
   mode: 'production',
   entry: path.resolve(__dirname, 'index.ts'),
   output: {
-    path: __dirname,
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './template.html',
-      favicon: './public/logo.svg',
+      favicon: './assets/logo.svg',
     }),
     new MiniCssExtractPlugin(),
   ],
