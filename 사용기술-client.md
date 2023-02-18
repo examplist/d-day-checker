@@ -55,3 +55,5 @@ parent selector를 사용할 수 있습니다. 이는 코드의 가독성을 높
 ## GitHub Actions
 
 CI(Continuous Integration)를 하기 위해 썼습니다. Vitest를 활용한 테스트가 포함되어 있습니다.
+
+dev 브랜치에서 실행을 하고, 이를 성공하면 main 브랜치에 pull request를 하는 형식으로 만들었습니다.
