@@ -51,9 +51,3 @@ parent selector를 사용할 수 있습니다. 이는 코드의 가독성을 높
 - 스타일 관련: 앞서 언급했듯이 SCSS를 사용했기 때문에 'sass-loader'를 사용했고요. production을 할 때는 'mini-css-extract-plugin'을 사용했고, 개발을 할 때는 (dev server를 쓸 때는) 'style-loader'를 사용했습니다. 이렇게 적용되는 패키지를 나눈 이유는 다음과 같습니다. 개발을 할 때는 애초에 CSS 파일을 만들어서 쓸 수가 없고요. production을 할 때는 혹시나 생길 수 있는 Cumulative Layout Shift를 막기 위해서입니다. 다른 프로젝트에서 styled-components를 쓴 적이 있는데, 이 현상이 심해서 이렇게 했습니다. 그런데 여기에서는 이 현상이 없는 것 같습니다. production 모드와 개발 모드는 .env 파일을 통해 조절했습니다.
 
 - 타입스크립트: Babel을 사용했습니다.
-
-## GitHub Actions
-
-CI(Continuous Integration)를 하기 위해 썼습니다. Vitest를 활용한 테스트가 포함되어 있습니다.
-
-dev 브랜치에서 실행을 하고, 이를 성공하면 main 브랜치에 pull request를 하는 형식으로 만들었습니다.
