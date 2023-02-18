@@ -1,2 +1,11 @@
-node_modules/
+# 환경 변수
 .env
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
