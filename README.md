@@ -1,36 +1,28 @@
-# D-Day 확인하기
+\* 한국어 설명은 아래에 있습니다.
 
-## 용도
+## Introduction
 
-to-do list에 날짜 입력 기능과, 그에 따른 d-day를 알려주는 기능을 추가한 것입니다.
+It is a to-do list app with selecting dates. Using the dates, day counting works.
 
-날짜가 지났으면 D+1과 같이 +가 나타나도록 했고, 지나지 않았으면 D-1과 같이 -가 나타나도록 했고, 해당 날짜이면 D-Day가 나타나도록 했습니다.
+If the day has passed, “+” is shown like “D+1”.
 
-## 구조
+If the day has not passed, “-” is shown like “D-1”.
 
-### 제목
+If the day is the day in which the person is checking, “D-day” is shown.
 
-제목이 나타납니다.
+## Demonstration Video
 
-### 추가
+[link](https://youtu.be/mM6YJQZSQzw)
 
-일정을 추가하는 공간입니다.
+## 소개
 
-### 정렬
+to-do list에 날짜 입력 기능이 추가되었고, 입력된 날짜를 바탕으로 d-day를 알려줍니다.
 
-'작성순'과 '날짜순'으로 일정 정렬할 수 있습니다.
+날짜가 지났으면 “D+1”과 같이 “+”가 나타납니다.
 
-### 일정
+지나지 않았으면 “D-1”과 같이 “-“가 나타납니다.
 
-일정들이 보이는 공간입니다. 각 일정을 수정하거나 삭제할 수 있습니다.
-
-### 페이지네이션
-
-원하는 페이지로 이동할 수 있습니다.
-
-## 반응형
-
-일정 부분에 있는 일정들이 화면이 좁아지면 1줄에서 2줄로 변합니다.
+해당 날짜이면 “D-Day”가 나타납니다.
 
 ## 시연 영상
 
